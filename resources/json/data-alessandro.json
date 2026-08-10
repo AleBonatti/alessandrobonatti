@@ -43,7 +43,7 @@
         {
             "icon": "swedish.svg",
             "label": "Swedish",
-            "level": "A1",
+            "level": "A2",
             "percentage": "15",
             "detail": "Actively studing"
         }
@@ -102,7 +102,7 @@
                 { "label": { "title": "Management", "position": [25, 105] }, "point": [50, 100], "percentage": 70 }
             ],
             "grid": [
-                { "icon": { "fa": true, "code": "fa-solid fa-arrows-spin" }, "text": "Ci/Cd", "stars": 4 },
+                { "icon": { "fa": true, "code": "fa-solid fa-arrows-spin" }, "text": "CI / CD", "stars": 4 },
                 { "icon": { "fa": true, "code": "fa-brands fa-linux" }, "text": "Linux server", "stars": 3 },
                 { "icon": { "fa": true, "code": "fa-brands fa-digital-ocean" }, "text": "Digital Ocean", "stars": 4 },
                 { "icon": { "fa": true, "code": "fa-brands fa-gitkraken" }, "text": "GitKraken", "stars": 5 },

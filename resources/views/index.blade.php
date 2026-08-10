@@ -449,13 +449,13 @@
                         </a>
                         <a href="tel:{{ $data->config->phone }}" class="contact contact--link">
                             <span class="contact__icon">
-                                <i class="fa-solid fa-message"></i>
+                                <i class="fa-solid fa-phone"></i>
                             </span>
                             <span class="contact__text">[{{ $data->config->country }}] {{ $data->config->phone }}</span>
                         </a>
                         <a href="tel:{{ $data->config->phone2 }}" class="contact contact--link">
                             <span class="contact__icon">
-                                <i class="fa-solid fa-message"></i>
+                                <i class="fa-solid fa-phone"></i>
                             </span>
                             <span class="contact__text">[{{ $data->config->country2 }}] {{ $data->config->phone2 }}</span>
                         </a>
