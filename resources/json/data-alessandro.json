@@ -1,0 +1,147 @@
+{
+    "config": {
+        "title": "Alessandro Bonatti",
+        "description": "I am a full stack developer actively searching for a job in Sweden, Malmö",
+        "nick": "Cuttlefish",
+        "role": "Full Stack Developer",
+        "email": "hej@alessandrobonatti.com",
+        "personal_email": "la.seppia@gmail.com",
+        "site_url": "alessandrobonatti.com",
+        "country": "IT",
+        "phone": "+39 3406887826",
+        "country2": "SE",
+        "phone2": "+46 70-0331855",
+        "location": "",
+        "love": "Malmö, Sweden",
+        "cv": "CV_AlessandroBonatti.pdf",
+        "linkedin": "https://www.linkedin.com/in/alessandro-bonatti/",
+        "githubRepo": "github.com/AleBonatti",
+        "github": "https://github.com/AleBonatti",
+        "whatsapp": "https://wa.me/+393406887826",
+        "telegram": "https://t.me/+393406887826",
+        "iubenda_site_id": "3941646",
+        "iubenda_cookie_policy_id": "72689656",
+        "gtag": "G-496QCT7X7S"
+    },
+    "intro": ["<strong>Hej, I’m Alessandro,</strong><br>", "<strong>a Full Stack Web Developer with <em>over 25 years of experience</em> in the field.</strong><br><br>", "I started my career in 1999 as an employee, a role I held for 13 years, before transitioning to freelancing and founding my own agency, which I successfully managed for another 13 years.<br><br>", "Through this journey, I have gained <em>extensive experience in web development</em>, working with various technologies and tackling projects of varying complexity. My expertise ranges from front end to back end development, with a <em>strong focus on creating scalable, maintainable, and high-performance solutions</em>.", "Since relocating to Malmö, Sweden in October 2025, I have been working as a <em>software development consultant</em>, gaining valuable experience within the Swedish professional environment.<br><br>This experience has broadened my perspective on collaboration, communication, and modern software development practices, while allowing me to further develop my technical skills and adapt to a new professional culture."],
+    "footer": ["Born on <em>17/01/1976</em>, I am an independent person with years of experience and a strong determination to constantly challenge myself. I approach every new challenge with enthusiasm and a desire to grow, always open to new learning and improvement opportunities.", "I have a <em>driving license for both cars and motorcycles</em> and am used to managing myself autonomously and adapting to different environments. I look forward to relocate to Scandinavia to embark on new professional and personal experiences, bringing with me my <strong><em>initiative, reliability, and eagerness</em></strong> to actively contribute to new projects.<br><br>I’m embarking on this exciting new chapter of life with my partner — both in love and work — Carmen. She’s the most talented developer I know. <a href=\"https://carmenghirardi.com\" target=\"_blank\">Take a look at her work!</a>"],
+    "languages": [
+        {
+            "icon": "italian.svg",
+            "label": "Italian",
+            "level": "",
+            "percentage": "100",
+            "detail": "Mother tongue"
+        },
+        {
+            "icon": "english.svg",
+            "label": "English",
+            "level": "C2",
+            "percentage": "95",
+            "detail": "Fluent"
+        },
+        {
+            "icon": "swedish.svg",
+            "label": "Swedish",
+            "level": "A1",
+            "percentage": "15",
+            "detail": "Actively studing"
+        }
+    ],
+    "skills": [
+        {
+            "title": "Web Backend \u2014 API",
+            "description": "I started my professional career as a .NET developer in a Microsoft environment, then, within a few years, I transitioned to the open source world and philosophy. Over the years, I became passionate about modern development frameworks and technologies, and today my primary focus is on <em><strong>Typescript</strong> and <strong>Node.js</strong></em>, with <em>Fastify</em> for backend development. I also have extensive experience with the <em>PHP/Laravel ecosystem</em>, which has been an important part of my professional journey for several years.",
+            "level": "100",
+            "chart": [
+                { "label": { "title": "PostgreSql", "position": [0, 25] }, "point": [10, 50], "percentage": 90 },
+                { "label": { "title": "Node", "position": [60, 0] }, "point": [80, 15], "percentage": 80 },
+                { "label": { "title": "Laravel", "position": [45, 95] }, "point": [70, 90], "percentage": 100 }
+            ],
+            "grid": [
+                { "icon": { "fa": true, "code": "fa-brands fa-node-js" }, "text": "Node.js", "stars": 4 },
+                { "icon": { "fa": false, "code": "typescript.svg" }, "text": "Typescript", "stars": 4 },
+                { "icon": { "fa": false, "code": "drizzle.svg" }, "text": "DrizzleOrm", "stars": 4 },
+                { "icon": { "fa": true, "code": "fa-brands fa-postgresql" }, "text": "Postgresql", "stars": 5 },
+                { "icon": { "fa": true, "code": "fa-brands fa-php" }, "text": "Php", "stars": 5 },
+                { "icon": { "fa": true, "code": "fa-brands fa-laravel" }, "text": "Laravel", "stars": 5 },
+                { "icon": { "fa": false, "code": "mysql.svg" }, "text": "MySQL", "stars": 5 },
+                { "icon": { "fa": false, "code": "vercel.svg" }, "text": "Vercel", "stars": 2 },
+                { "icon": { "fa": true, "code": "fa-brands fa-python" }, "text": "Python", "stars": 2 },
+                { "icon": { "fa": false, "code": "mssqlserver.svg" }, "text": "MS SQL Server", "stars": 3 }
+            ]
+        },
+        {
+            "title": "Web Frontend",
+            "description": "In recent years, I have sought to bridge the gaps that separated me from becoming a complete and independent developer as much as possible by deepening my knowledge of Frontend development and Typescript, particularly the <em><strong>Vue.js</strong> and <strong>React</strong> frameworks alongside Tailwind CSS</em>. I have experience with SEO-related issues, as well as usability and accessibility.",
+            "level": "90",
+            "chart": [
+                { "label": { "title": "HTML", "position": [0, 30] }, "point": [10, 50], "percentage": 90 },
+                { "label": { "title": "Css", "position": [55, 100] }, "point": [70, 90], "percentage": 80 },
+                { "label": { "title": "VueJs", "position": [60, 0] }, "point": [80, 15], "percentage": 90 }
+            ],
+            "grid": [
+                { "icon": { "fa": true, "code": "fa-brands fa-vuejs" }, "text": "Vue", "stars": 5 },
+                { "icon": { "fa": true, "code": "fa-brands fa-react" }, "text": "React", "stars": 4 },
+                { "icon": { "fa": false, "code": "typescript.svg" }, "text": "Typescript", "stars": 4 },
+                { "icon": { "fa": false, "code": "tailwindcss.svg" }, "text": "TailwindCss", "stars": 4 },
+                { "icon": { "fa": false, "code": "nextjs.svg" }, "text": "Next.js", "stars": 2 },
+                { "icon": { "fa": true, "code": "fa-brands fa-figma" }, "text": "Figma", "stars": 3 },
+                { "icon": { "fa": false, "code": "" }, "text": "S.E.O.", "stars": 3 },
+                { "icon": { "fa": false, "code": "" }, "text": "Accessibility", "stars": 2 },
+                { "icon": { "fa": false, "code": "" }, "text": "Usability", "stars": 2 }
+            ]
+        },
+        {
+            "title": "Server & Tools",
+            "description": "I can configure a scalable Linux web server based on PHP and MySQL, including a backup system. I have developed and used various types of APIs. I can work independently, but I am also accustomed to working in teams of various sizes. <em>I have built my own CMS from scratch</em>, which I use as the foundation for most of my projects.",
+            "level": "80",
+            "chart": [
+                { "label": { "title": "Web", "position": [0, 30] }, "point": [10, 50], "percentage": 100 },
+                { "label": { "title": "Server", "position": [60, 0] }, "point": [80, 15], "percentage": 70 },
+                { "label": { "title": "Management", "position": [25, 105] }, "point": [50, 100], "percentage": 70 }
+            ],
+            "grid": [
+                { "icon": { "fa": true, "code": "fa-solid fa-arrows-spin" }, "text": "Ci/Cv", "stars": 4 },
+                { "icon": { "fa": true, "code": "fa-brands fa-linux" }, "text": "Linux server", "stars": 3 },
+                { "icon": { "fa": true, "code": "fa-brands fa-digital-ocean" }, "text": "Digital Ocean", "stars": 4 },
+                { "icon": { "fa": true, "code": "fa-brands fa-gitkraken" }, "text": "GitKraken", "stars": 5 },
+                { "icon": { "fa": true, "code": "fa-brands fa-github" }, "text": "GitHub", "stars": 5 },
+                { "icon": { "fa": true, "code": "fa-brands fa-claude" }, "text": "Claude AI", "stars": 3 },
+                { "icon": { "fa": true, "code": "fa-brands fa-aws" }, "text": "Aws", "stars": 2 },
+                { "icon": { "fa": true, "code": "fa-brands fa-docker" }, "text": "Docker", "stars": 2 },
+                { "icon": { "fa": true, "code": "fa-brands fa-npm" }, "text": "NPM", "stars": 3 },
+                { "icon": { "fa": false, "code": "vscode.svg" }, "text": "VS Code", "stars": 5 }
+            ]
+        }
+    ],
+    "experiences": [
+        { "title": ["Elva11", "2025 \u2014 2026"], "role": ["Full stack developer", "Malmö, Sweden"], "description": "Working as a <em>consultant</em> across several client assignments, contributing to full-stack web development projects and adapting to different technologies, teams, and business requirements." },
+        { "title": ["e-Project", "2023 \u2014 2025"], "role": ["Full stack developer", "Parma, Italy"], "description": "Tired of the tough italian freelancer life, I decided to go back to <em>full-time programming</em>. The new possibilities brought by AI have become my main interest." },
+        { "title": ["Methlab", "2011 \u2014 2023"], "role": ["Co-owner and co-founder", "Fidenza, Italy"], "description": "I co-founded and managed <em>my own web development agency</em>, overseeing the design, development, and management of websites and applications. I specialized as a Full Stack Developer, handling both frontend and backend development." },
+        { "title": ["e-Project", "2001 \u2014 2011"], "role": ["Full stack developer", "Parma, Italy"], "description": "I started by developing simple websites and gradually transitioned to more complex projects, including management systems and e-commerce platforms. I focused on creating intuitive user interfaces and <em>advanced functionalities</em>, working on projects across various industries while continuously improving my technical skills." },
+        { "title": ["FirstPoint", "1999 \u2014 2001"], "role": ["Web developer", "Fidenza, Italy"], "description": "My first job in web development, where I created and maintained websites with a focus on HTML, CSS, and JavaScript. I collaborated with designers and other developers to deliver <em>effective and functional solutions</em>, adapting to client needs." }
+    ],
+    "passions": [
+        { "icon": "person-hiking", "text": "The mountains and forests are my refuge, places where I can find <em>balance between nature and freedom</em>. I love experiencing the mountains in every possible way, from trekking to mountain biking, from skiing to climbing. I adore snow, fog, and cold climates; and I already know that the thing I will miss the most when I’m in Sweden will be the Alps." },
+        { "icon": "gamepad", "text": "I have also been passionate about video games and role-playing games, both digital and tabletop, since I was a child. I believe they help <em>stimulate creativity</em>, critical thinking, and teamwork. I enjoy TV series, cinema, and nerd culture in general." },
+        { "icon": "plane", "text": "I’m a <em>passionate traveler</em> drawn to both the Far East and the Far North — fascinated by Japan’s culture and philosophy as well as Scandinavia’s minimalism, nature, and innovation. Traveling helps me grow, learn, and experience the world through different lenses." }
+    ],
+    "education": {
+        "annotation": "Self-taught Web Development: in the early 2000s, web development was not yet part of school curricula. For this reason, I embarked on a self-learning journey, independently studying technologies and programming languages to keep up with industry advancements.",
+        "items": [
+            { "title": ["1996 \u2014 1999", "University studies in Communication Sciences"], "role": ["Not completed — University of Parma", "Parma, Italy"], "description": "My passion for this incredible new invention called &quot;the Internet&quot; led me to <em>explore web development on my own</em>. Fascinated by its potential, I started learning independently, laying the groundwork for my future career in the field.", "tasks": [] },
+            { "title": ["1991 \u2014 1996", "Technical High School specializing in Computer Science"], "role": ["Grade 51/60 Diploma — I.T.I.S. Berenini", "Fidenza, Italy"], "description": "During this period, I learned the fundamentals of programming in an era when the internet was not yet widespread. This experience gave me a strong <em>foundation in problem-solving</em> and algorithmic thinking, which I later applied to web development.", "tasks": [] }
+        ]
+    },
+    "showcase": {
+        "introduction": "I have developed dozens of projects, ranging <em>from websites to business management systems, APIs, and payment systems</em>. Each project has been an opportunity to tackle new challenges and refine my skills. Most of these projects are protected by authentication, but I would be happy to <em>showcase them in a dedicated meeting</em>, presenting the <em>solutions implemented</em>, my <em>development approach</em>, and the <em>technologies used</em> to achieve the required goals.",
+        "works": [
+            { "type": "As MethaLab developer", "link": "parmafluid.com", "url": "https://parmafluid.com", "images": ["parmafluid.com_back.jpg", "parmafluid.com_front.jpg"], "text": "Company website. Custom catalogue structure, data import from old MsSql db, news history, ad hoc CMS, 5 different languages contents management, third party newsletter integration.", "role": "Backend Development \u2014 Server and deploy management", "behind": "Laravel, Mysql" },
+            { "type": "As e-Project employee", "link": "pieffeci.com", "url": "https://pieffeci.com", "images": ["pieffeci.com_back.jpg", "pieffeci.com_front.jpg"], "text": "Company website. Custom catalogue; news, certifications and forms; ad hoc CMS.", "role": "Backend Development \u2014 Server and deploy management", "behind": "Laravel, MySql" },
+            { "type": "Independent work", "link": "SeppiaCms", "url": "https://pieffeci.com/login", "images": ["pieffeci.com_admin_back.jpg", "pieffeci.com_admin_front.jpg"], "text": "My own CMS, developed over the years and adaptable to most needs. Under authentication, I will be happy to show you all its features.”", "role": "UI/UX \u2014 Full Stack Development \u2014 Server and deploy management \u2014 up-to-date maintenace", "behind": "VueJs, TailwindCSS, Laravel, Mysql" },
+            { "type": "As MethLab developer", "link": "lamamita.it", "url": "https://lamamita.com", "images": ["lamamita.it_back.jpg", "lamamita.it_front.jpg"], "text": "Company B2C and B2B e-commerce. Online payments, custom product search and filters, ad hoc CMS, 4 languages support. Third party data flow ad hoc integration. Custom user fidelity and wishlist systems.", "role": "Backend Development \u2014 Server and deploy management", "behind": "Laravel, MySql, Stripe and Paypal payment integration" },
+            { "type": "As e-Project employee", "link": "crm.termest.it", "url": "https://crm.termest.it", "images": ["crmtermest_back.jpg", "crmtermest_front.jpg"], "text": "Company B2C management system. Api connection to company websites. Orders and customers management. Under authentication, I will be happy to show you all its features.", "role": "Full Stack Development \u2014 Server and deploy management", "behind": "Tailwind CSS, VueJs, Laravel, MySql, Api data management" }
+        ]
+    }
+}

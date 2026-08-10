@@ -1,0 +1,34 @@
+{
+  "_app-yI0f_ewm.js": {
+    "file": "assets/app-yI0f_ewm.js",
+    "name": "app"
+  },
+  "resources/css/alessandro.css": {
+    "file": "assets/alessandro-C0zWzG4L.css",
+    "src": "resources/css/alessandro.css",
+    "isEntry": true
+  },
+  "resources/css/carmen.css": {
+    "file": "assets/carmen-DmCRQZ_3.css",
+    "src": "resources/css/carmen.css",
+    "isEntry": true
+  },
+  "resources/js/alessandro.js": {
+    "file": "assets/alessandro-VoIS_Y5L.js",
+    "name": "alessandro",
+    "src": "resources/js/alessandro.js",
+    "isEntry": true,
+    "imports": [
+      "_app-yI0f_ewm.js"
+    ]
+  },
+  "resources/js/carmen.js": {
+    "file": "assets/carmen-CS9PwhfZ.js",
+    "name": "carmen",
+    "src": "resources/js/carmen.js",
+    "isEntry": true,
+    "imports": [
+      "_app-yI0f_ewm.js"
+    ]
+  }
+}

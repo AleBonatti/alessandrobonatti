@@ -1,0 +1,188 @@
+{
+    "config": {
+        "title": "Carmen Ghirardi",
+        "description": "I am a full stack developer actively searching for a job in Sweden",
+        "nick": "Carmen Lysla Ghirardi",
+        "role": "Full Stack Developer",
+        "email": "hej@carmenghirardi.com",
+        "personal_email": "info@lysla.it",
+        "site_url": "carmenghirardi.com",
+        "country": "IT",
+        "phone": "+39 3485715119",
+        "country2": "SE",
+        "phone2": "+46 70-0331860",
+        "location": "",
+        "love": "Malmö, Sweden",
+        "cv": "CV_CarmenGhirardi.pdf",
+        "linkedin": "https://www.linkedin.com/in/carmenghirardi/",
+        "github": "https://github.com/lysla",
+        "whatsapp": "https://wa.me/+393485715119",
+        "telegram": "https://t.me/+393485715119",
+        "iubenda_site_id": "3941325",
+        "iubenda_cookie_policy_id": "47466824",
+        "gtag": "G-0FLBZMWKJF"
+    },
+    "intro": ["<strong>Hello, I’m Carmen!</strong><br><strong>A developer with <em>10+ years of experience</em> now based in Malmö, Sweden.</strong><br><br>I’m a passionate <em>full stack developer</em> working at a Swedish tech company, while also pursuing personal projects and selective freelance collaborations. Living in Sweden has strengthened my appreciation for its culture of innovation, inclusivity, and balance — values that align with how I build and collaborate.<br><br>My expertise lies in <em>developing thoughtful management and communication platforms</em> for companies and private clients. I love turning complex ideas into elegant, functional solutions with a focus on usability, collaboration, and long-term impact."],
+    "footer": ["Born on <em>January 21st, 1989</em>, I am a proactive and dedicated individual with a strong passion for technology, nature, and collaborative teamwork. I thrive in dynamic environments where I can contribute, learn, and grow alongside others. In addition to my technical expertise and hobbies, <em>I possess a valid driver’s license (Category B) and own a car</em>, which allows me to be flexible and mobile for both professional and personal commitments. I am always eager to learn, grow, and embrace new challenges with an open mind.", "I am excited about the opportunity to connect and explore <em>new professional opportunities in Sweden</em>. I look forward to contributing my skills and passion to a dynamic environment. Please feel free to <strong><em>reach out</em></strong> if you would like to discuss how I can bring value to your team or project.<br><br>I’m embarking on this exciting new chapter of life with my partner — both in love and work — Alessandro. He’s the most talented PHP backend developer I know.  <a href=\"https://alessandrobonatti.com\" target=\"_blank\">Take a look at his work!</a>"],
+    "skills": [
+        {
+            "title": "Web Frontend",
+            "description": "My strongest and most accomplished skill. Ever since <em>I was 11</em>, I\u2019ve been captivated by the art of designing websites. My journey began with coding a project dedicated to my favorite anime, and that early passion has only grown stronger over the years. Today, I turn ideas into engaging, functional, and user-friendly web experiences.",
+            "level": "100",
+            "chart": [
+                { "label": { "title": "HTML", "position": [0, 25] }, "point": [10, 50], "percentage": 100 },
+                { "label": { "title": "JS\u2014TS", "position": [60, 0] }, "point": [80, 15], "percentage": 100 },
+                { "label": { "title": "CSS", "position": [60, 100] }, "point": [70, 90], "percentage": 100 }
+            ],
+            "grid": [
+                { "icon": { "fa": true, "code": "vuejs" }, "text": "Vue", "stars": 5 },
+                { "icon": { "fa": true, "code": "react" }, "text": "React", "stars": 4 },
+                { "icon": { "fa": true, "code": "angular" }, "text": "Angular", "stars": 2 },
+                { "icon": { "fa": false, "code": "tailwindcss.svg" }, "text": "tailwindcss", "stars": 5 },
+                { "icon": { "fa": true, "code": "bootstrap" }, "text": "Bootstrap", "stars": 5 },
+                { "icon": { "fa": false, "code": "sass.svg" }, "text": "Sass", "stars": 5 },
+                { "icon": { "fa": false, "code": "gsap.svg" }, "text": "GSAP", "stars": 5 },
+                { "icon": { "fa": false, "code": "" }, "text": "S.E.O", "stars": 4 },
+                { "icon": { "fa": false, "code": "" }, "text": "Accessibility", "stars": 5 },
+                { "icon": { "fa": false, "code": "" }, "text": "Usability", "stars": 5 }
+            ]
+        },
+        {
+            "title": "Web Backend \u2014 API",
+            "description": "I can\u2019t imagine a life without coding \u2014 the satisfaction of turning a problem into a solution and seeing it come to life with <em>a triumphant \u201cIt works!\u201d</em> is unmatched. My journey with programming began in high school, and it has been a defining passion and integral part of my life ever since.",
+            "level": "100",
+            "chart": [
+                { "label": { "title": "Database", "position": [0, 25] }, "point": [25, 45], "percentage": 80 },
+                { "label": { "title": "PHP", "position": [65, 0] }, "point": [70, 10], "percentage": 100 },
+                { "label": { "title": "NodeJS", "position": [65, 70] }, "point": [80, 60], "percentage": 80 },
+                { "label": { "title": ".NET", "position": [25, 85] }, "point": [40, 80], "percentage": 45 }
+            ],
+            "grid": [
+                { "icon": { "fa": true, "code": "laravel" }, "text": "Laravel", "stars": 5 },
+                { "icon": { "fa": false, "code": "adonisjs.svg" }, "text": "AdonisJS", "stars": 4 },
+                { "icon": { "fa": false, "code": "netcore.svg" }, "text": ".NET Core", "stars": 3 },
+                { "icon": { "fa": false, "code": "mysql.svg" }, "text": "MySQL", "stars": 5 },
+                { "icon": { "fa": false, "code": "mssqlserver.svg" }, "text": "MS SQL Server", "stars": 3 }
+            ]
+        },
+        {
+            "title": "Design \u2014 Graphics",
+            "description": "Designing user navigation experiences is the most entertaining part of my work. I take inspiration from well-crafted experiences I encounter daily, reimagining them to <em>fit the unique needs</em> of my clients. My goal is to create designs that are not only visually appealing but also functional, ensuring that every interaction feels natural and effortless.",
+            "level": "90",
+            "chart": [
+                { "label": { "title": "Illustration", "position": [0, 5] }, "point": [20, 20], "percentage": 20 },
+                { "label": { "title": "UX", "position": [75, 5] }, "point": [90, 20], "percentage": 100 },
+                { "label": { "title": "UI", "position": [75, 95] }, "point": [85, 90], "percentage": 100 },
+                { "label": { "title": "Brand Identity", "position": [0, 95] }, "point": [15, 85], "percentage": 70 }
+            ],
+            "grid": [
+                { "icon": { "fa": true, "code": "figma" }, "text": "Figma", "stars": 5 },
+                { "icon": { "fa": false, "code": "xd.svg" }, "text": "XD", "stars": 4 },
+                { "icon": { "fa": false, "code": "photoshop.svg" }, "text": "Photoshop", "stars": 3 },
+                { "icon": { "fa": false, "code": "illustrator.svg" }, "text": "Illustrator", "stars": 3 }
+            ]
+        },
+        {
+            "title": "App",
+            "description": "From custom management systems to app versions of websites, the ability to <em>offer software-like solutions</em> enhances client satisfaction and adds value to their digital presence.",
+            "level": "50",
+            "chart": [
+                { "label": { "title": "Web", "position": [5, 0] }, "point": [10, 15], "percentage": 100 },
+                { "label": { "title": "Mobile", "position": [60, 30] }, "point": [80, 50], "percentage": 70 },
+                { "label": { "title": "Desktop", "position": [10, 85] }, "point": [20, 80], "percentage": 70 }
+            ],
+            "grid": [
+                { "icon": { "fa": false, "code": "nativescript.svg" }, "text": "Nativescript", "stars": 5 },
+                { "icon": { "fa": false, "code": "capacitor.svg" }, "text": "Capacitor", "stars": 2 },
+                { "icon": { "fa": false, "code": "electron.svg" }, "text": "Electron", "stars": 3 }
+            ]
+        },
+        {
+            "title": "Teamwork \u2014 Tools",
+            "description": "Last but not least, my <em>teamwork and project management</em> skills, developed over years of experience as an employee and through collaborations with other professionals. I have managed projects created by multiple contributors and have taken on <em>various roles</em> within the overall design process.",
+            "level": "90",
+            "chart": [
+                { "label": { "title": "Fluidity", "position": [0, 0] }, "point": [20, 20], "percentage": 100 },
+                { "label": { "title": "Git", "position": [75, 5] }, "point": [80, 10], "percentage": 80 },
+                { "label": { "title": "Management", "position": [10, 85] }, "point": [70, 90], "percentage": 90 }
+            ],
+            "grid": [
+                { "icon": { "fa": true, "code": "git" }, "text": "Git", "stars": 4 },
+                { "icon": { "fa": false, "code": "vscode.svg" }, "text": "VS Code", "stars": 5 },
+                { "icon": { "fa": true, "code": "gitkraken" }, "text": "GitKraken", "stars": 5 },
+                { "icon": { "fa": true, "code": "github" }, "text": "GitHub", "stars": 5 },
+                { "icon": { "fa": true, "code": "docker" }, "text": "Docker", "stars": 3 },
+                { "icon": { "fa": true, "code": "npm" }, "text": "NPM", "stars": 4 },
+                { "icon": { "fa": true, "code": "slack" }, "text": "Slack", "stars": 4 },
+                { "icon": { "fa": false, "code": "notion.svg" }, "text": "Notion", "stars": 4 },
+                { "icon": { "fa": false, "code": "clickup.svg" }, "text": "ClickUp", "stars": 4 },
+                { "icon": { "fa": true, "code": "bitbucket" }, "text": "Bitbucket", "stars": 3 },
+                { "icon": { "fa": false, "code": "copilot.svg" }, "text": "Copilot", "stars": 4 },
+                { "icon": { "fa": false, "code": "msvisualstudio.svg" }, "text": "MS Visual Studio", "stars": 3 },
+                { "icon": { "fa": true, "code": "apple" }, "text": "Apple MacOS", "stars": 5 },
+                { "icon": { "fa": true, "code": "windows" }, "text": "MS Windows", "stars": 5 }
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "icon": "italian.svg",
+            "label": "Italian",
+            "level": "",
+            "percentage": "100",
+            "detail": "Mother tongue"
+        },
+        {
+            "icon": "english.svg",
+            "label": "English",
+            "level": "C2",
+            "percentage": "97",
+            "detail": "Fluent"
+        },
+        {
+            "icon": "swedish.svg",
+            "label": "Swedish",
+            "level": "A2",
+            "percentage": "45",
+            "detail": "Actively studing"
+        },
+        {
+            "icon": "japanese.svg",
+            "label": "Japanese",
+            "level": "A1",
+            "percentage": "15",
+            "detail": "Undying passion"
+        }
+    ],
+    "experiences": [
+        { "title": ["ELVA11", "2025 \u2014 Now"], "role": ["Full Stack Developer", "Malmö, Sweden"], "description": "Full stack developer and consultant, <em>specialized in PHP</em> (Laravel) and JavaScript/TypeScript frameworks." },
+        { "title": ["Lysla", "2010 \u2014 Now"], "role": ["Independent Professional", "Italy"], "description": "As a freelancer I specialized in IT communication services. Full stack development, UI/UX, software engineering, web app, mobile app, training classes, <em>IT consulting</em>." },
+        { "title": ["e-Project Srl", "2016 \u2014 2025"], "role": ["Full Stack Developer", "Parma, Italy"], "description": "Full stack developer <em>specialized in PHP</em> (Laravel), JavaScript/TypeScript (Vuejs, Nodejs), and frontend UI/UX." },
+        { "title": ["Provincial Administration of Reggio Emilia", "2010 \u2014 2017"], "role": ["IT Coordinator", "Reggio Emilia, Italy"], "description": "Technical support, software assistance, development and management of internal IT services, creation of promotional graphic materials, consultant. Provided <em>on-site support</em> to libraries across the province, traveling by car to assist with technical needs." },
+        { "title": ["Infor Group", "2014 \u2014 2016"], "role": ["Teacher", "Parma, Italy"], "description": "<em>Instructor</em> in the professional use of Adobe Photoshop." },
+        { "title": ["ECIPAR Scarl", "2010 \u2014 2016"], "role": ["Teacher", "Parma, Italy"], "description": "<em>Instructor</em> of programming courses and graphic design, basic IT, and social web marketing." }
+    ],
+    "education": {
+        "annotation": "Beyond formal education, I have independently expanded my expertise in web development through self-directed learning and personal projects. I developed strong skills in PHP for backend development and advanced knowledge of frontend technologies like HTML, CSS, JavaScript. This combination of formal training and self-taught knowledge has enabled me to stay current and adaptable in the ever-evolving tech landscape.",
+        "items": [
+            { "title": ["2009 \u2014 2010", "Support Volunteer \u2014 Italian Civil Service Program"], "role": ["Public Service and Social Support", "Parma, Italy"], "description": "Driven by a desire to take a break from academic studies and contribute meaningfully to society, I decided to join a volunteer program. The opportunity arose when the wife of my programming professor, who managed a cooperative participating in the social service volunteer program, warmly welcomed me to join their initiatives.", "tasks": ["Facilitated activities as an animator and provided <em>social support</em> to groups of young people, fostering teamwork and personal development.", "Assisted and supported individuals with disabilities, <em>ensuring their inclusion</em> and active participation in community programs.", "Offered childcare and educational support in a preschool environment, helping to organize activities and provide hands-on <em>assistance to teachers</em>.", "Worked alongside individuals recovering from challenging experiences, including former inmates, to assist in their <em>reintegration and personal growth</em> through structured activities and mentorship."] },
+            { "title": ["2005 \u2014 2009", "Technical High School specializing in Computer Science"], "role": ["I.T.I.S. \u201cLeonardo da Vinci\u201d", "Parma, Italy"], "description": "From an early age, I have been passionate about software development and the creative problem-solving it entails. Choosing to specialize in computer science allowed me to turn that passion into practical skills, laying the foundation for my career in technology. During my studies, I delved into both software and hardware topics, exploring the world of programming and system design.", "tasks": ["Learned functional programming concepts and languages, including C and Assembly, to develop a <em>deep understanding</em> of how systems operate at a fundamental level.", "Transitioned to <em>object-oriented programming</em>, mastering languages like Java, C++, and C#, and applying these principles to build efficient, modular applications.", "Gained advanced knowledge of <em>hardware technologies</em>, with hands-on experience in system architecture and technical components.", "Explored web development within the <em>.NET framework</em>, building robust, data-driven applications."] }
+        ]
+    },
+    "showcase": {
+        "introduction": "Over the years, I have worked on <em>dozens of projects</em>, ranging from publicly accessible platforms to internal management software used behind private authentication. Many of these projects were tailored to specific business needs, demonstrating my ability to deliver custom solutions. I would be delighted to provide a detailed overview of my work upon request, but here are some of my most <em>recent</em> and representative projects.",
+        "works": [
+            { "type": "Independent work", "link": "scovaimpianti.com", "url": "https://scovaimpianti.com", "images": ["scovaimpianti.com_back.jpg", "scovaimpianti.com_front.jpg"], "text": "Company website. Custom product and categories structure, news history, ad hoc CMS, third party contact forms integration.", "role": "UI/UX \u2014 Full Stack Development \u2014 Server and deploy management", "behind": "Figma, TailwindCSS, Laravel" },
+            { "type": "Independent work", "link": "nicoladeangelis.com", "url": "https://nicoladeangelis.com", "images": ["nicoladeangelis.com_back.jpg", "nicoladeangelis.com_front.jpg"], "text": "Professional MD website. Custom articles and publications structure, ad hoc CMS.", "role": "UI/UX \u2014 Full Stack Development \u2014 Server and deploy management", "behind": "Figma, TailwindCSS, Laravel" },
+            { "type": "Independent work", "link": "aifimm.it", "url": "https://aifimm.it", "images": ["aifimm.it_back.jpg", "aifimm.it_front.jpg"], "text": "Academy association website. Online subscriptions, on-demand video courses, e-commerce, online payments, whole custom structure and CMS, custom exports and PDF certificates automation.", "role": "UI/UX \u2014 Full Stack Development \u2014 Server and deploy management", "behind": "Figma, TailwindCSS, Laravel, Stripe payment integration" },
+            { "type": "As e-Project Srl employee", "link": "filteragri.com", "url": "https://filteragri.com", "images": ["filteragri.com_back.jpg", "filteragri.com_front.jpg"], "text": "Company B2C and B2B e-commerce. Online payments, custom product search and filters, ad hoc CMS. Third party data flow ad hoc integration. Custom user fidelity and wishlist systems.", "role": "Full Stack Development \u2014 Server and deploy management", "behind": "Bootstrap CSS, Laravel, Stripe and Paypal payment integration" },
+            { "type": "As e-Project Srl employee", "link": "rossettimarket.it", "url": "https://rossettimarket.it", "images": ["rossettimarket.it_back.jpg", "rossettimarket.it_front.jpg"], "text": "Company B2C e-commerce. Online payments, custom product search and filters, ad hoc CMS. Third party data flow ad hoc integration.", "role": "Full Stack Development \u2014 Server and deploy management", "behind": "Bootstrap CSS, Laravel, direct bank credit card integration, social authentication" }
+        ]
+    },
+    "passions": [
+        { "icon": "paw", "text": "I have a deep love for animals and I am especially connected to my own dog and cat, who have been a constant source of joy in my life. Their well-being is a top priority, and I’m committed to <em>bringing them with me</em> as I start a new chapter in Sweden." },
+        { "icon": "mountain", "text": "Nature has always been a source of inspiration for me, particularly mountains and snowy landscapes. I <em>find peace in hiking</em> through these environments, breathing in fresh air, and sharing these experiences with my life partner, who shares my love for the outdoors." },
+        { "icon": "gamepad", "text": "Gaming is one of my favorite ways to <em>unwind</em>, whether playing on consoles and PC or watching others play — a relaxing habit I enjoy with my partner. I also have a deep passion for card games, especially Magic: The Gathering, which I find both strategic and endlessly fun." },
+        { "icon": "pot-food", "text": "Cooking is another creative outlet for me, particularly when preparing vegetarian and vegan dishes. It’s a way for me to <em>connect</em> my love for animals and nature with something tangible and enjoyable. While I sometimes wish I were less passionate about food :-), I truly love both the process and the flavors that come with it." }
+    ]
+}

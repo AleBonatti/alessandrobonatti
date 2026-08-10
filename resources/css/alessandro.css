@@ -1,0 +1,9 @@
+@import "./app.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@config './../../tailwind.alessandro.config.js';
+
+.elses__text a {
+    @apply bg-[#59B1FF];
+}

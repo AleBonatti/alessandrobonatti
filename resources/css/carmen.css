@@ -1,0 +1,9 @@
+@import "./app.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@config './../../tailwind.carmen.config.js';
+
+.elses__text a {
+    @apply bg-[#e84a5f];
+}
