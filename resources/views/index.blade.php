@@ -114,13 +114,17 @@
                     <span class="contact__icon">
                         <i class="fa-solid fa-phone"></i>
                     </span>
-                    <span class="contact__text">[{{ $data->config->country2 }}] {{ $data->config->phone2 }}</span>
+                    <div class="flex contact__text gap-1">
+                        <img src="{{ asset('images/languages/' . $data->languages[2]->icon) }}" class="w-6" /> {{ $data->config->phone2 }}
+                    </div>
                 </a>
                 <a href="tel:{{ $data->config->phone }}" class="contact contact--link">
                     <span class="contact__icon">
                         <i class="fa-solid fa-phone"></i>
                     </span>
-                    <span class="contact__text">[{{ $data->config->country }}] {{ $data->config->phone }}</span>
+                    <div class="flex contact__text gap-1">
+                        <img src="{{ asset('images/languages/' . $data->languages[0]->icon) }}" class="w-6" /> {{ $data->config->phone }}
+                    </div>
                 </a>
                 @if (!empty($data->config->location))
                     <div class="contact">
@@ -455,17 +459,21 @@
                             </span>
                             <span class="contact__text">{{ $data->config->email }}</span>
                         </a>
-                        <a href="tel:{{ $data->config->phone }}" class="contact contact--link">
-                            <span class="contact__icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </span>
-                            <span class="contact__text">[{{ $data->config->country }}] {{ $data->config->phone }}</span>
-                        </a>
                         <a href="tel:{{ $data->config->phone2 }}" class="contact contact--link">
                             <span class="contact__icon">
                                 <i class="fa-solid fa-phone"></i>
                             </span>
-                            <span class="contact__text">[{{ $data->config->country2 }}] {{ $data->config->phone2 }}</span>
+                            <div class="flex gap-1 contact__text">
+                                <img src="{{ asset('images/languages/' . $data->languages[2]->icon) }}" class="w-6" /> {{ $data->config->phone2 }}
+                            </div>
+                        </a>
+                        <a href="tel:{{ $data->config->phone }}" class="contact contact--link">
+                            <span class="contact__icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <div class="flex gap-1 contact__text">
+                                <img src="{{ asset('images/languages/' . $data->languages[0]->icon) }}" class="w-6" /> {{ $data->config->phone }}
+                            </div>
                         </a>
                     </div>
                 </section>
