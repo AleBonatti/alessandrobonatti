@@ -110,19 +110,19 @@
                     </span>
                     <span class="contact__text">{{ $data->config->githubRepo }}</span>
                 </a>
-                <a href="tel:{{ $data->config->phone }}" class="contact contact--link">
-                    <span class="contact__icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </span>
-                    <span class="contact__text">[{{ $data->config->country }}] {{ $data->config->phone }}</span>
-                </a>
                 <a href="tel:{{ $data->config->phone2 }}" class="contact contact--link">
                     <span class="contact__icon">
                         <i class="fa-solid fa-phone"></i>
                     </span>
                     <span class="contact__text">[{{ $data->config->country2 }}] {{ $data->config->phone2 }}</span>
                 </a>
-                @if ($data->config->location)
+                <a href="tel:{{ $data->config->phone }}" class="contact contact--link">
+                    <span class="contact__icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <span class="contact__text">[{{ $data->config->country }}] {{ $data->config->phone }}</span>
+                </a>
+                @if (!empty($data->config->location))
                     <div class="contact">
                         <span class="contact__icon">
                             <i class="fa-solid fa-house"></i>
@@ -199,18 +199,26 @@
                             </span>
                             <span class="contact__text">{{ $data->config->email }}</span>
                         </a>
-                        <a href="tel:+393485715119" class="contact contact--link">
+                        <a href="tel:{{ $data->config->phone2 }}" class="contact contact--link">
                             <span class="contact__icon">
-                                <i class="fa-solid fa-message"></i>
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <span class="contact__text">[{{ $data->config->country2 }}] {{ $data->config->phone2 }}</span>
+                        </a>
+                        <a href="tel:{{ $data->config->phone }}" class="contact contact--link">
+                            <span class="contact__icon">
+                                <i class="fa-solid fa-phone"></i>
                             </span>
                             <span class="contact__text">[{{ $data->config->country }}] {{ $data->config->phone }}</span>
                         </a>
-                        <div class="contact">
-                            <span class="contact__icon">
-                                <i class="fa-solid fa-house"></i>
-                            </span>
-                            <span class="contact__text">{{ $data->config->location }}</span>
-                        </div>
+                        @if (!empty($data->config->location))
+                            <div class="contact">
+                                <span class="contact__icon">
+                                    <i class="fa-solid fa-house"></i>
+                                </span>
+                                <span class="contact__text">{{ $data->config->location }}</span>
+                            </div>
+                        @endif
                         <div class="contact">
                             <span class="contact__icon contact__icon--alt">
                                 <i class="fa-solid fa-house-heart"></i>
