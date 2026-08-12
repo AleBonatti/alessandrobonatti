@@ -56,7 +56,7 @@
             "chart": [
                 { "label": { "title": "PostgreSql", "position": [0, 25] }, "point": [10, 50], "percentage": 90 },
                 { "label": { "title": "Node", "position": [60, 0] }, "point": [80, 15], "percentage": 80 },
-                { "label": { "title": "Laravel", "position": [45, 95] }, "point": [70, 90], "percentage": 100 }
+                { "label": { "title": "Typescript", "position": [45, 95] }, "point": [70, 85], "percentage": 100 }
             ],
             "grid": [
                 { "icon": { "fa": true, "code": "fa-brands fa-node-js" }, "text": "Node.js", "stars": 4 },
