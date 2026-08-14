@@ -9,6 +9,7 @@ Route::get('/', function () {
     $assets = Str::contains($url, 'carmen') ? 'carmen' : 'alessandro';
 
     $data = json_decode(file_get_contents(resource_path("json/$file")));
+    $print = request()->boolean('print');
 
-    return view('index', compact('data', 'assets'));
+    return view('index', compact('data', 'assets', 'print'));
 });

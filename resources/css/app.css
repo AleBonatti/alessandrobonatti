@@ -533,3 +533,26 @@ strong em {
     @apply flex max-lg:flex-col lg:items-center gap-2 lg:gap-10 py-5 lg:py-10;
 }
 /*#endregion*/
+
+/*#region print*/
+body.print .sidebar {
+    @apply lg:flex;
+}
+body.print .segment,
+body.print .header__button,
+body.print .content__wrapper .contacts {
+    @apply hidden;
+}
+body.print .contacts {
+    @apply flex;
+}
+body.print .tasks__dot {
+    @apply scale-100;
+}
+body.print .passion__icon {
+    transform: none;
+}
+body.print .header__name--section {
+    @apply hidden;
+}
+/*#endregion*/

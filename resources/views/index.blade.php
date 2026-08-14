@@ -7,19 +7,21 @@
     <link rel="preconnect" href="https://region1.google-analytics.com">
     <link rel="preconnect" href="https://cdn.iubenda.com">
 
-    <!-- #region google -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ $data->config->gtag }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    @unless ($print ?? false)
+        <!-- #region google -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ $data->config->gtag }}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-        gtag('config', '{{ $data->config->gtag }}');
-    </script>
-    <!-- #endregion -->
+            gtag('config', '{{ $data->config->gtag }}');
+        </script>
+        <!-- #endregion -->
+    @endunless
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,26 +55,32 @@
     <link rel="stylesheet" href="https://use.typekit.net/lby4anc.css">
     <script src="https://kit.fontawesome.com/d4363451a9.js" crossorigin="anonymous"></script>
 
-    @vite(['resources/css/' . $assets . '.css', 'resources/js/' . $assets . '.js'])
+    @if ($print ?? false)
+        @vite(['resources/css/' . $assets . '.css'])
+    @else
+        @vite(['resources/css/' . $assets . '.css', 'resources/js/' . $assets . '.js'])
+    @endif
 
-    <!-- #region iubenda -->
-    <script type="text/javascript">
-        var _iub = _iub || [];
-        _iub.csConfiguration = {
-            "siteId": {{ $data->config->iubenda_site_id }},
-            "cookiePolicyId": {{ $data->config->iubenda_cookie_policy_id }},
-            "lang": "en",
-            "storage": {
-                "useSiteId": true
-            }
-        };
-    </script>
-    <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3941325.js"></script>
-    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-    <!-- #endregion -->
+    @unless ($print ?? false)
+        <!-- #region iubenda -->
+        <script type="text/javascript">
+            var _iub = _iub || [];
+            _iub.csConfiguration = {
+                "siteId": {{ $data->config->iubenda_site_id }},
+                "cookiePolicyId": {{ $data->config->iubenda_cookie_policy_id }},
+                "lang": "en",
+                "storage": {
+                    "useSiteId": true
+                }
+            };
+        </script>
+        <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3941325.js"></script>
+        <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+        <!-- #endregion -->
+    @endunless
 </head>
 
-<body class="loading">
+<body class="loading {{ $print ?? false ? 'print' : '' }}">
     <div class="wrapper">
         <!-- #region sidebar -->
         <div class="sidebar">
@@ -252,12 +260,28 @@
                                 </div>
                                 <div class="skill__line">
                                     <span class="skill__line__base"></span>
-                                    <span class="skill__line__dot" data-level="{{ $skill->level }}"></span>
+                                    <span class="skill__line__dot" data-level="{{ $skill->level }}" @if ($print ?? false) style="left:{{ $skill->level }}%" @endif></span>
                                 </div>
                             </div>
                             <div class="skill__detail">
                                 <div class="skill__chart">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" data-base-shape="{{ implode('|', array_map(fn($c) => implode(',', $c->point), $skill->chart)) }}" data-level-shape-perc="{{ implode(',', array_map(fn($c) => $c->percentage, $skill->chart)) }}"></svg>
+                                    @if ($print ?? false)
+                                        @php
+                                            $baseShape = array_map(fn($c) => $c->point, $skill->chart);
+                                            $levelPerc = array_map(fn($c) => $c->percentage, $skill->chart);
+                                            $middlePoint = array_reduce($baseShape, fn($acc, $p) => [$acc[0] + $p[0] / count($baseShape), $acc[1] + $p[1] / count($baseShape)], [0, 0]);
+                                            $levelShape = array_map(fn($p, $i) => [$middlePoint[0] + ($p[0] - $middlePoint[0]) * ($levelPerc[$i] / 100), $middlePoint[1] + ($p[1] - $middlePoint[1]) * ($levelPerc[$i] / 100)], $baseShape, array_keys($baseShape));
+                                        @endphp
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                            @foreach ($baseShape as $point)
+                                                <path d="M {{ $middlePoint[0] }} {{ $middlePoint[1] }} L {{ $point[0] }} {{ $point[1] }}" style="stroke:#fff;stroke-width:0.5;fill:none" />
+                                            @endforeach
+                                            <polygon points="{{ implode(' ', array_map(fn($p) => "{$p[0]},{$p[1]}", $baseShape)) }}" style="stroke:#fff;stroke-width:0.5;fill:none" />
+                                            <polygon points="{{ implode(' ', array_map(fn($p) => "{$p[0]},{$p[1]}", $levelShape)) }}" style="stroke:#fff;stroke-width:0.5;fill:#be3144" />
+                                        </svg>
+                                    @else
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" data-base-shape="{{ implode('|', array_map(fn($c) => implode(',', $c->point), $skill->chart)) }}" data-level-shape-perc="{{ implode(',', array_map(fn($c) => $c->percentage, $skill->chart)) }}"></svg>
+                                    @endif
                                     @foreach ($skill->chart as $chart)
                                         <span style="left:{{ $chart->label->position[0] }}%;top:{{ $chart->label->position[1] }}%;">{{ $chart->label->title }}</span>
                                     @endforeach
@@ -285,7 +309,7 @@
                                                 </div>
                                                 <div class="skill__grid__item__stars">
                                                     @for ($i = 1; $i <= 5; $i++)
-                                                        <div class="skill__grid__item__star" {{ $i <= $s->stars ? 'data-color' : '' }}></div>
+                                                        <div class="skill__grid__item__star" {{ $i <= $s->stars ? 'data-color' : '' }} @if (($print ?? false) && $i <= $s->stars) style="background-color:#e84a5f" @endif></div>
                                                     @endfor
                                                 </div>
                                             </div>
@@ -301,8 +325,12 @@
                         @foreach ($data->languages as $language)
                             <div class="language">
                                 <div class="language__circle">
+                                    @php
+                                        $circumference = 2 * M_PI * 50;
+                                        $offset = $circumference - ($circumference * $language->percentage) / 100;
+                                    @endphp
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" data-percentage="{{ $language->percentage }}">
-                                        <circle cx="50" cy="50" r="50"></circle>
+                                        <circle cx="50" cy="50" r="50" @if ($print ?? false) style="stroke-dasharray:{{ $circumference }};stroke-dashoffset:{{ $offset }}" @endif></circle>
                                     </svg>
                                     <img src="{{ asset('images/languages/' . $language->icon) }}" alt="">
                                     @if ($language->level)
